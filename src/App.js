@@ -1,12 +1,11 @@
-import Expenses from "./components/Expenses";
-import expenses from "./data";
+import Expenses from "./components/Expenses/Expenses";
+
 
 function App()
 {
-
     return (
         <div>
-            <Expenses items={expenses}/>
+            <Expenses/>
         </div>
     );
 }

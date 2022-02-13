@@ -1,4 +1,4 @@
-const expenses = [
+export const expenses = [
     {
         id: 'e1',
         title: 'Toilet Paper',
@@ -20,4 +20,5 @@ const expenses = [
     },
 ];
 
-export default expenses;
+export const labels = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+
