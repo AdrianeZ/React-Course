@@ -3,7 +3,7 @@ import "./ChartBar.css"
 
 const ChartBar = ({value, maxValue, label}) => {
 
-    let barFillHeigth;
+    let barFillHeigth = "0%";
 
     if(maxValue > 0)
     {
@@ -15,7 +15,7 @@ const ChartBar = ({value, maxValue, label}) => {
     return (
         <div className="chart-bar">
             <div className="chart-bar__inner">
-                <div className="chart-bar__fill" style={{heigth:barFillHeigth}}> </div>
+                <div className="chart-bar__fill" style={{height:barFillHeigth}}> </div>
             </div>
             <div className="chart-bar__label">{label}</div>
         </div>

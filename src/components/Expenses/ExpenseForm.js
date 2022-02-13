@@ -65,17 +65,17 @@ const ExpenseForm = ({onExpenseSubmit}) => {
                 <div className="new-expense__control">
                     <label htmlFor="expenseName">Title</label>
                     <input id="expenseName" name="expenseName" type="text" onChange={titleChange}
-                           value={formStatus.expenseText}/>
+                           value={formStatus.expenseText} required/>
                 </div>
                 <div className="new-expense__control">
                     <label htmlFor="expenseAmount">Amount</label>
                     <input id="expenseAmount" name="expenseAmount" type="number"
-                           onChange={amountChange} step="0.01" min="0.01" value={formStatus.expenseAmount}/>
+                           onChange={amountChange} step="0.01" min="0.01"  value={formStatus.expenseAmount} required/>
                 </div>
                 <div className="new-expense__control">
                     <label htmlFor="ExpenseDate">Date</label>
                     <input id="expenseDate" name="expenseDate" type="date" onChange={dateChange}
-                           value={formStatus.expenseDate}/>
+                           value={formStatus.expenseDate} required/>
                 </div>
             </div>
 
